@@ -389,7 +389,9 @@ namespace AlwaysLoadedChecker
             }
 
             string packageName = compiledPath == null ? Path.GetFileNameWithoutExtension(cookedPath) : Path.GetFileNameWithoutExtension(compiledPath);
-            return new AlwaysLoadedChecker(cookedPath, compiledPath, packageName);
+            var form = new AlwaysLoadedChecker(cookedPath, compiledPath, packageName);
+            form.SimpleMode = true;
+            return form;
         }
 
         static public AlwaysLoadedChecker LaunchAdvanced(string cookedPath, string compiledPath, bool showWarnings, bool showMissingCompiledWarning = true, IWin32Window owner = null)
@@ -467,7 +469,9 @@ namespace AlwaysLoadedChecker
             }
 
             string packageName = compiledPath == null ? Path.GetFileNameWithoutExtension(cookedPath) : Path.GetFileNameWithoutExtension(compiledPath);
-            return new AlwaysLoadedChecker(cookedPath, compiledPath, packageName);
+            var form = new AlwaysLoadedChecker(cookedPath, compiledPath, packageName);
+            form.SimpleMode = false;
+            return form;
         }
 
         public static string GetAppRoot()

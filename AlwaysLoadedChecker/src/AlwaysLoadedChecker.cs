@@ -18,6 +18,7 @@ namespace AlwaysLoadedChecker
 
         public string CookedPackagePath, EditorPackagePath;
         public string PackageName;
+        public bool SimpleMode;
 
         public struct ClassAlwaysLoadedStatus
         {
@@ -405,6 +406,10 @@ namespace AlwaysLoadedChecker
                     if (isInStartupPackage)
                     {
                         resultLabel.Text = "This class is AlwaysLoaded!\n(But isn't present in the editor package.)";
+                    }
+                    else if (SimpleMode)
+                    {
+                        resultLabel.Text = $"Could not find this class in {PackageName ?? "the package you selected"}.\nNOTE: If a game class isn't there, then it's definitely AlwaysLoaded!";
                     }
                     else
                     {
