@@ -10,9 +10,13 @@ Additionally, the tool can also dump the AlwaysLoaded-ness of all classes into a
 
 ![image](https://github.com/user-attachments/assets/b334fee0-4a07-468b-9e54-988a30413ce9)
 
-# How to install
-1. Download and extract the latest version from the [Releases](https://github.com/Un-Drew/AlwaysLoadedChecker/releases).
-2. Download and extract Glidor's [Unreal Package Decompressor](https://www.gildor.org/downloads), then place the extracted **decompress.exe** in the tool's folder. This is necessary, as the tool needs to be able to extract the game's pacakges.
+# Installing & Requirements
+1. Have the game installed, of course.
+2. Make sure you have the [.NET Framework 4.8 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48) installed. (If you already have the modding tools, then you definitely have this installed, too)
+3. Download and extract the latest version of this tool from the [Releases](https://github.com/Un-Drew/AlwaysLoadedChecker/releases).
+4. Download and extract Glidor's [Unreal Package Decompressor](https://www.gildor.org/downloads), then place the extracted **decompress.exe** in the tool's folder. This is necessary, as the tool needs to be able to extract the game's pacakges.
+
+...And you're all set!
 
 # Misc links
 Want to report a bug or request a feature? Check out the [Issues](https://github.com/Un-Drew/AlwaysLoadedChecker/issues) tab!
