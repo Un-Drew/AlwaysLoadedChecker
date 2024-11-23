@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysLoadedChecker", "AlwaysLoadedChecker\AlwaysLoadedChecker.csproj", "{D58E9B4B-91DA-41FA-B182-F594179F86EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysLoadedCheckerCli", "AlwaysLoadedCheckerCli\AlwaysLoadedCheckerCli.csproj", "{A7003FB5-39AB-468C-B347-630F0D51DA09}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D58E9B4B-91DA-41FA-B182-F594179F86EA} = {D58E9B4B-91DA-41FA-B182-F594179F86EA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlwaysLoadedCheckerApp", "AlwaysLoadedCheckerApp\AlwaysLoadedCheckerApp.csproj", "{AD2159A7-940F-4F1C-A6BB-56B5582500A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D58E9B4B-91DA-41FA-B182-F594179F86EA} = {D58E9B4B-91DA-41FA-B182-F594179F86EA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D58E9B4B-91DA-41FA-B182-F594179F86EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58E9B4B-91DA-41FA-B182-F594179F86EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58E9B4B-91DA-41FA-B182-F594179F86EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58E9B4B-91DA-41FA-B182-F594179F86EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7003FB5-39AB-468C-B347-630F0D51DA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7003FB5-39AB-468C-B347-630F0D51DA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7003FB5-39AB-468C-B347-630F0D51DA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7003FB5-39AB-468C-B347-630F0D51DA09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2159A7-940F-4F1C-A6BB-56B5582500A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2159A7-940F-4F1C-A6BB-56B5582500A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2159A7-940F-4F1C-A6BB-56B5582500A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2159A7-940F-4F1C-A6BB-56B5582500A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E211ADA-B1BB-4047-969B-F3E9603E0F76}
+	EndGlobalSection
+EndGlobal
