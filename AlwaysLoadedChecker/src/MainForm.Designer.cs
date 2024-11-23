@@ -31,14 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBoxSettings = new System.Windows.Forms.GroupBox();
+            this.labelAsterix = new System.Windows.Forms.Label();
+            this.labelNoteAsterix = new System.Windows.Forms.Label();
             this.radioSimple = new System.Windows.Forms.RadioButton();
             this.panelSimple = new System.Windows.Forms.Panel();
             this.labelGameDir = new System.Windows.Forms.Label();
+            this.labelAsterixGameDir = new System.Windows.Forms.Label();
             this.textBoxGameDir = new System.Windows.Forms.TextBox();
             this.browseGameDir = new System.Windows.Forms.Button();
             this.radioAdvanced = new System.Windows.Forms.RadioButton();
             this.panelAdvanced = new System.Windows.Forms.Panel();
             this.labelCookedPackage = new System.Windows.Forms.Label();
+            this.labelAsterixCookedPackage = new System.Windows.Forms.Label();
             this.textBoxCookedPackage = new System.Windows.Forms.TextBox();
             this.browseCookedPackage = new System.Windows.Forms.Button();
             this.labelScriptPackage = new System.Windows.Forms.Label();
@@ -50,10 +54,6 @@
             this.labelIntro = new System.Windows.Forms.LinkLabel();
             this.buttonIntro = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.labelNoteAsterix = new System.Windows.Forms.Label();
-            this.labelAsterix = new System.Windows.Forms.Label();
-            this.labelAsterixGameDir = new System.Windows.Forms.Label();
-            this.labelAsterixCookedPackage = new System.Windows.Forms.Label();
             this.groupBoxSettings.SuspendLayout();
             this.panelSimple.SuspendLayout();
             this.panelAdvanced.SuspendLayout();
@@ -76,6 +76,29 @@
             this.groupBoxSettings.TabIndex = 1;
             this.groupBoxSettings.TabStop = false;
             this.groupBoxSettings.Text = "Settings";
+            // 
+            // labelAsterix
+            // 
+            this.labelAsterix.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterix.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labelAsterix.Location = new System.Drawing.Point(509, 16);
+            this.labelAsterix.Margin = new System.Windows.Forms.Padding(0);
+            this.labelAsterix.Name = "labelAsterix";
+            this.labelAsterix.Size = new System.Drawing.Size(16, 13);
+            this.labelAsterix.TabIndex = 11;
+            this.labelAsterix.Text = "*";
+            this.labelAsterix.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelNoteAsterix
+            // 
+            this.labelNoteAsterix.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labelNoteAsterix.Location = new System.Drawing.Point(354, 16);
+            this.labelNoteAsterix.Margin = new System.Windows.Forms.Padding(0);
+            this.labelNoteAsterix.Name = "labelNoteAsterix";
+            this.labelNoteAsterix.Size = new System.Drawing.Size(155, 16);
+            this.labelNoteAsterix.TabIndex = 10;
+            this.labelNoteAsterix.Text = "Required fields are marked with";
+            this.labelNoteAsterix.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // radioSimple
             // 
@@ -115,6 +138,18 @@
             this.labelGameDir.TabIndex = 0;
             this.labelGameDir.Text = "Game Directory";
             this.labelGameDir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelAsterixGameDir
+            // 
+            this.labelAsterixGameDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterixGameDir.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labelAsterixGameDir.Location = new System.Drawing.Point(84, 9);
+            this.labelAsterixGameDir.Margin = new System.Windows.Forms.Padding(0);
+            this.labelAsterixGameDir.Name = "labelAsterixGameDir";
+            this.labelAsterixGameDir.Size = new System.Drawing.Size(16, 13);
+            this.labelAsterixGameDir.TabIndex = 12;
+            this.labelAsterixGameDir.Text = "*";
+            this.labelAsterixGameDir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBoxGameDir
             // 
@@ -178,6 +213,18 @@
             this.labelCookedPackage.TabIndex = 3;
             this.labelCookedPackage.Text = "Cooked Package";
             this.labelCookedPackage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelAsterixCookedPackage
+            // 
+            this.labelAsterixCookedPackage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterixCookedPackage.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.labelAsterixCookedPackage.Location = new System.Drawing.Point(94, 9);
+            this.labelAsterixCookedPackage.Margin = new System.Windows.Forms.Padding(0);
+            this.labelAsterixCookedPackage.Name = "labelAsterixCookedPackage";
+            this.labelAsterixCookedPackage.Size = new System.Drawing.Size(16, 13);
+            this.labelAsterixCookedPackage.TabIndex = 13;
+            this.labelAsterixCookedPackage.Text = "*";
+            this.labelAsterixCookedPackage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBoxCookedPackage
             // 
@@ -302,53 +349,6 @@
             this.toolTip.InitialDelay = 500;
             this.toolTip.ReshowDelay = 100;
             // 
-            // labelNoteAsterix
-            // 
-            this.labelNoteAsterix.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelNoteAsterix.Location = new System.Drawing.Point(354, 16);
-            this.labelNoteAsterix.Margin = new System.Windows.Forms.Padding(0);
-            this.labelNoteAsterix.Name = "labelNoteAsterix";
-            this.labelNoteAsterix.Size = new System.Drawing.Size(155, 16);
-            this.labelNoteAsterix.TabIndex = 10;
-            this.labelNoteAsterix.Text = "Required fields are marked with";
-            this.labelNoteAsterix.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelAsterix
-            // 
-            this.labelAsterix.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAsterix.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelAsterix.Location = new System.Drawing.Point(509, 16);
-            this.labelAsterix.Margin = new System.Windows.Forms.Padding(0);
-            this.labelAsterix.Name = "labelAsterix";
-            this.labelAsterix.Size = new System.Drawing.Size(16, 13);
-            this.labelAsterix.TabIndex = 11;
-            this.labelAsterix.Text = "*";
-            this.labelAsterix.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelAsterixGameDir
-            // 
-            this.labelAsterixGameDir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAsterixGameDir.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelAsterixGameDir.Location = new System.Drawing.Point(84, 9);
-            this.labelAsterixGameDir.Margin = new System.Windows.Forms.Padding(0);
-            this.labelAsterixGameDir.Name = "labelAsterixGameDir";
-            this.labelAsterixGameDir.Size = new System.Drawing.Size(16, 13);
-            this.labelAsterixGameDir.TabIndex = 12;
-            this.labelAsterixGameDir.Text = "*";
-            this.labelAsterixGameDir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelAsterixCookedPackage
-            // 
-            this.labelAsterixCookedPackage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAsterixCookedPackage.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.labelAsterixCookedPackage.Location = new System.Drawing.Point(94, 9);
-            this.labelAsterixCookedPackage.Margin = new System.Windows.Forms.Padding(0);
-            this.labelAsterixCookedPackage.Name = "labelAsterixCookedPackage";
-            this.labelAsterixCookedPackage.Size = new System.Drawing.Size(16, 13);
-            this.labelAsterixCookedPackage.TabIndex = 13;
-            this.labelAsterixCookedPackage.Text = "*";
-            this.labelAsterixCookedPackage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,6 +357,7 @@
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelIntro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "The unofficial A Hat in Time AlwaysLoaded Checker";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlwaysLoadedChecker));
             this.title1 = new System.Windows.Forms.Label();
             this.title2 = new System.Windows.Forms.Label();
             this.classTextBox = new System.Windows.Forms.TextBox();
@@ -246,6 +247,7 @@
             this.Controls.Add(this.theMenu);
             this.Controls.Add(this.loadingPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.Name = "AlwaysLoadedChecker";
